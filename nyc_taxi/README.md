@@ -20,4 +20,4 @@ This project demonstrates how to build a data pipeline using Apache Kafka and El
 Install the required Python libraries using pip:
 
 ```bash
-pip install kafka-python elasticsearch
+pip install --upgrade elasticsearch==7.13.2
