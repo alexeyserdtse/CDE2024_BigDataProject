@@ -13,7 +13,7 @@ default_args = {
 }
 
 # Define the DAG
-with DAG('produce_nyctaxi_to_kafka', default_args=default_args, schedule_interval=None, catchup=False) as dag:
+with DAG('nyctaxi_to_kafka_produce', default_args=default_args, schedule_interval=None, catchup=False, tags=['NYC Taxi', 'producer']) as dag:
 
     get_last_cut_date = SSHOperator(
         task_id='run_python_producer',
